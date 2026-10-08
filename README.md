@@ -4,7 +4,6 @@
 <br>
 
 ### 1. Project Overview
-<br>
 
 #### 1.1 Purpose of this Work:
 

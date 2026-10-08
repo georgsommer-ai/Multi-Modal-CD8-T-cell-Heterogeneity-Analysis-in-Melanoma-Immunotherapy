@@ -1,8 +1,6 @@
 ## Reverse Engineering of a <br> Multi-Modal CD8⁺ T-cell Heterogeneity Analysis in Melanoma Immunotherapy
 <br>
-<br>
 **Seurat SCT & Intergration  ·  Differential Expression DESeq2/Modulescore  ·  TCR/VDJ Clonotypes  ·  TITAN Topic Modeling  ·  Azimuth  ·  Functional Manual Annotation  ·  GSEA**
-<br>
 <br>
 
 ### 1. Project Overview

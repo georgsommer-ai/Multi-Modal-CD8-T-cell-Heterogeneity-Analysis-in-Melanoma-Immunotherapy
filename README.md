@@ -4,6 +4,7 @@
 <br>
 
 ### 1. Project Overview
+<br>
 
 #### 1.1 Purpose of this Work:
 
@@ -67,8 +68,7 @@ I assess comparability using **UMAPs of Commonalities**(Fig.1c, 1d) based on a *
 Fig.1: **1c and 1d** show that **fundamental cell populations** and key cluster structures remain **largely preserved** despite the smaller number of cells/patients.
 </em></p>
 
-**Blood samples** were included as a negative control and to show the complete picture.
-GS: They are well separated in the UMAP clusters 1, 3, 5, 9 (Fig. 1a) and the tissue analysis (chapter 4.9 ) proves that. Therefore they **do not influence the analysis.**
+**Blood samples** were included as a negative control and to show the complete picture. They are well separated in the UMAP clusters 1, 3, 5, 9 (Fig. 1a) and the tissue analysis (chapter 4.9 ) proves that. Therefore they **do not influence the analysis.**
 
 The **re-engineering** therefore **robustly reproduces the main findings** of the original study across substantial parts of the analysis.
 <br>
@@ -189,13 +189,6 @@ flowchart TD
 
 
 
-```
-```markdown
-# GS überarbeiten!!!!!!!!!!
-- The workflow combines bulk RNA-seq, scRNA-seq, and TCR/VDJ analyses to reconstruct the functional heterogeneity of CPHi CD8+ TILs.
-- Bulk RNA-seq was used to derive robust CPHi / CPLo gene signatures, which were subsequently transferred to the single-cell data.
-- scRNA-seq and TCR/VDJ analyses were integrated to characterize transcriptional states, inhibitory-receptor programs, clonality, and overlapping functional topics.
-- Final cluster and topic annotations were derived by integrating marker expression, differential expression, module scores, inhibitory-receptor profiles, clonotype information, topic structure, and known T-cell biology.
 ```
 <br>
 
@@ -583,8 +576,7 @@ Integration removes effects of patient/tissue differences on the clustering
 Fig . p_int_check
 </em></p>
 
-**Blood samples** were included as a negative control and to show the complete picture.
-GS: (A)They are well separated in the UMAP clusters 1, 3, 5, 9 and the tissue analysis (B) proves that. Therefore they **do not influence the analysis.**
+**Blood samples** were included as a negative control and to show the complete picture. They are well separated in the UMAP clusters 1, 3, 5, 9 and the tissue analysis (B) proves that. Therefore they **do not influence the analysis.**
 <br>
 <br>
 <br>

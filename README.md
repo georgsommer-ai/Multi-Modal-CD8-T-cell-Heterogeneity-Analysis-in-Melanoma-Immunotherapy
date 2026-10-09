@@ -192,7 +192,46 @@ flowchart TD
 ```
 <br>
 
+```mermaid
+flowchart TD
 
+    A[Public Data Sources<br/>Bulk RNA-seq: GSE147620<br/>scRNA-seq / TCR-seq: GSE148190]
+    R[ RDS file from original study]
+    
+    A --> B1[Bulk RNA-seq Workflow<br/>Salmon tximport -> Paired DESeq2]
+    B1 --> B2[CPHi / CPLo Gene-Signatures]
+    B2 --> B3[GSEA]
+    
+    A --> C1[scRNA-seq Workflow<br/>10x Matrices -> QC -> SCTransform]
+    C1 --> C2[CD8+ T-cell Identification before ]
+    C2 --> C3[TCR-Gene Removal]
+    C3 --> C4[CCA Integration]
+    C4 --> C5[Normalization]
+    C5 --> C6[CD8+ T-cell Identification after]
+    C6 --> C7[Tissue / Patient Source UMAP]
+    C6 --> C8[Comparison with Published Analysis]
+    R ---> C8
+    
+    B2 --> D1[Gene-Signature Transfer<br/>AddModuleScore]
+    C5 --> D1
+    D1 --> D2[CPHi / CPLo Classification<br/>3 complementary strategies]
+    D2 --> D3[Inhibitory-Receptor Coexpression Analysis]
+
+    C5 --> E1[TCR / VDJ Clonotype Analysis]
+    E1 --> E2[Clonal Expansion Analysis]
+
+    C5 --> F1[TITAN Topic Modeling]
+    F1 --> F2[Azimuth Reference Annotation]
+    F2 --> F3[Manual Functional Annotation]
+
+    F3 --> G[Reengineered Functional States of CD8+ TILs]
+    E2 --> G
+    D3 --> G
+
+
+
+```
+<br>
 
 ### 4. Results 
 <br>

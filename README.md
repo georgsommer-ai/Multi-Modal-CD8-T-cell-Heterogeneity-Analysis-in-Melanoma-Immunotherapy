@@ -180,7 +180,7 @@ flowchart TD
     D1 --> D2[CPHi / CPLo Classification<br/>3 complementary strategies]
     D2 --> D3[Inhibitory-Receptor Coexpression Analysis]
 
-    C5 --> E1[TCR / VDJ Clonotype Analysis]
+    A --> E1[TCR / VDJ Clonotype Analysis]
     C5 --> F1[TITAN Topic Modeling]
     C5 --> K1[Azimuth Reference Annotation]
 

@@ -263,8 +263,8 @@ flowchart TD
 
     C5 --> F1[TITAN Topic Modeling]
     C5 --> K1[Azimuth Reference Annotation]
-    F1 --> G[Manual Functional Annotation]
-    E2 --> G
+    F1 ----> G[Manual Functional Annotation]
+    E2 ---> G
     D3 --> G
 
 

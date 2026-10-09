@@ -237,7 +237,7 @@ flowchart TD
 flowchart TD
 
     A[Public Data Sources<br/>Bulk RNA-seq: GSE147620<br/>scRNA-seq / TCR-seq: GSE148190]
-    R[ RDS file from original Melanoma(2025) study]
+    R[RDS file from original Melanoma study]
     
     A --> B1[Bulk RNA-seq Workflow<br/>Salmon tximport -> Paired DESeq2]
     B1 --> B2[CPHi / CPLo Gene-Signatures]

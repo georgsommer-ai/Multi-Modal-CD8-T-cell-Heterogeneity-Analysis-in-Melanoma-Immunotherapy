@@ -166,11 +166,11 @@ flowchart TD
     B2 --> B3[GSEA]
 
     A --> C1[scRNA-seq Workflow<br/>10x Matrices -> QC -> SCTransform]
-    C1 --> C2[CD8+ T-cell Identification before]
+    C1 --> C2[Initial CD8+ T-cell Identification]
     C2 --> C3[TCR-Gene Removal]
     C3 --> C4[CCA Integration]
     C4 --> C5[Normalization]
-    C5 --> C6[CD8+ T-cell Identification after]
+    C5 --> C6[Refined CD8+ T-cell Identification]
     C6 --> C7[Tissue / Patient Source UMAP Analysis]
     C6 --> C8[UMAP Comparison with Published Analysis]
     R ---> C8

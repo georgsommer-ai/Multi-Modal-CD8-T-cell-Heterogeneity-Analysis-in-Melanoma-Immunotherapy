@@ -63,10 +63,6 @@ I assess comparability using **UMAPs of Commonalities**(Fig.1c, 1d) based on a *
   <img src="plots/main1.png" >
 </p>
 
-<p align="left"><em>
-Fig.1: <strong>1c and 1d</strong> show that <strong>fundamental cell populations</strong> and key cluster structures remain <strong>largely preserved</strong> despite the smaller number of cells/patients.
-</em></p>
-
 Fig.1: **1c and 1d** show that **fundamental cell populations** and key cluster structures remain **largely preserved** despite the smaller number of cells/patients. 
 
 
@@ -131,6 +127,7 @@ The 3 **Titan topics** and the **gene evidence** from the corresponding  **titan
 <p align="left"><em>
 Fig 3. Titan Topics
 </em></p>
+
 **CPᴴⁱ subpopulation** are:
 
 - predominantly **Topic 3 - Cytotoxic / Effector / (Terminally) Exhausted** T cells

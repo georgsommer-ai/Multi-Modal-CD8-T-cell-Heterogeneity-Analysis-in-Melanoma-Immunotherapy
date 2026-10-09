@@ -224,10 +224,6 @@ CP-Lo: log2FoldChange < 0 & padj < 0.05
 
 ```
 
-1. MYO7A, Intracellular transport: Encodes myosin VIIA, an actin-based motor involved in intracellular transport.
-It supports the organization and function of sensory cells in the inner ear and retina.
-Pathogenic variants can cause hearing loss and Usher syndrome.
-
 **2. XXYLT1-AS2, Endothelial inflammation:** Encodes an antisense long noncoding RNA associated with the XXYLT1 locus.
 In endothelial-cell experiments, it regulates proliferation and migration through the RNA-binding protein FUS.
 It can also reduce monocyte adhesion and inflammatory signaling in this experimental setting.
@@ -236,25 +232,9 @@ It can also reduce monocyte adhesion and inflammatory signaling in this experime
 It guides B cells into follicles within lymph nodes, spleen and other lymphoid tissues.
 This positioning helps organize the cellular interactions underlying antibody responses.
 
-4. BUB1B, Mitotic checkpoint: Encodes BUBR1, an essential component of the spindle assembly checkpoint.
-It restrains the anaphase-promoting complex until chromosomes have appropriate spindle attachments.
-This mechanism prevents premature chromosome separation and helps maintain chromosome stability.
-
-5. FDXR, Mitochondrial metabolism: Encodes ferredoxin reductase, a mitochondrial enzyme that receives electrons from NADPH.
-It supplies reducing power to mitochondrial cytochrome P450 systems involved in metabolic reactions.
-Pathogenic variants can impair mitochondrial function and cause neurological problems affecting hearing and vision.
-
-6. MCM2, DNA replication: Encodes a component of the MCM2-7 helicase complex required for DNA replication.
-It participates in replication licensing and the machinery that unwinds DNA before copying.
-Its expression is commonly used as an indicator of cellular proliferative potential.
-
 **7. SHCBP1, Cytokinesis:** Encodes a SHC-binding protein involved in the final stages of cell division.
 It helps organize the midbody and complete the separation of daughter cells.
 Mouse studies also implicate it in inflammatory CD4+ T-cell responses during experimental autoimmunity.
-
-8. PLK4, Centriole duplication: Encodes a serine/threonine kinase that controls centriole duplication.
-It initiates the formation of new centrioles during the cell cycle.
-Regulation of its activity helps maintain the centrosome organization required for normal cell division.
 
 **9. ETV7, Immune regulation:** Encodes an interferon-inducible transcriptional repressor of the ETS family.
 It suppresses the expression of selected interferon-stimulated genes.
@@ -272,17 +252,9 @@ It therefore helps determine the strength and outcome of adaptive T-cell respons
 It helps mobilize cholesterol for removal from macrophages and limits lipid accumulation.
 Its immune connection primarily concerns macrophage lipid metabolism in atherosclerotic lesions.
 
-13. KIFC1, Spindle organization: Encodes HSET, a kinesin motor that moves toward microtubule minus ends.
-It contributes to spindle organization and the clustering of centrosomes.
-In cells with extra centrosomes, this clustering can enable division through a bipolar spindle.
-
 **14. HMMR, Cell motility:** Encodes RHAMM, a protein involved in cell motility and spindle organization.
 It helps regulate spindle positioning and cytoskeletal behavior during division.
 Breast cancer models also link it to STING-dependent interferon signaling, giving it a context-specific immune role.
-
-15. DLGAP5, Spindle stability: Encodes HURP, a protein that binds and stabilizes spindle microtubules.
-It supports the microtubule bundles connecting chromosomes to the spindle.
-These activities promote chromosome alignment and accurate segregation during cell division.
 
 **16. ZBED2, Interferon regulation:** Encodes a zinc-finger transcriptional regulator that can modify interferon responses.
 In pancreatic cancer cells, it represses interferon-stimulated genes by opposing IRF1.
@@ -304,109 +276,30 @@ Mouse studies show that it supports NK-cell expansion, calcium signaling and pro
 Depending on context, it can promote cell-cycle entry or help maintain cellular quiescence.
 Mouse studies demonstrate additional roles in restraining excessive T-cell proliferation and maintaining immune self-tolerance.
 
-21. CDC25C, Mitotic entry: Encodes a phosphatase that regulates entry into mitosis.
-It removes inhibitory phosphate groups from CDK1 associated with cyclin B.
-Activation of this complex promotes the transition from G2 into the mitotic phase.
-
 **22. TRPC3, Calcium signaling:** Encodes a membrane channel permeable to calcium and other positively charged ions.
 It links receptor activation to calcium entry and downstream cellular signaling.
 Experimental studies report participation in calcium responses following T-cell receptor stimulation in human T cells.
-
-23. DOK6, Neuronal signaling: Encodes an intracellular adaptor that connects receptors to downstream signaling proteins.
-It participates in neurotrophic signaling involving receptor tyrosine kinases such as RET.
-Experimental neuronal models link it to neurite growth and maintenance of peripheral nerve function.
-
-24. UBE2T, DNA repair: Encodes an E2 ubiquitin-conjugating enzyme central to the Fanconi anemia repair pathway.
-Together with FANCL, it promotes ubiquitination of FANCD2 and FANCI.
-This modification supports the repair of DNA damage, particularly interstrand crosslinks.
 
 **25. ZNF304, Epigenetic silencing:** Encodes a KRAB zinc-finger protein that represses transcription.
 It recruits chromatin-modifying complexes that establish repressive epigenetic marks.
 In infected T-cell models, it promotes HIV latency by silencing viral transcription; this is an infection-related connection.
 
-26. RBBP9, Cell proliferation: Encodes a serine hydrolase originally identified through its interaction with retinoblastoma protein.
-It has been implicated in the regulation of cell proliferation and differentiation.
-Its enzymatic activity supports tumor growth in experimental pancreatic cancer models.
-
-27. NUF2, Chromosome segregation: Encodes a component of the NDC80 complex at chromosome kinetochores.
-This complex forms an essential connection between chromosomes and spindle microtubules.
-NUF2 supports stable attachment, chromosome alignment and faithful chromosome segregation.
-
 **28. PTPRN2, Autoantigen:** Encodes phogrin, also called IA-2beta, a protein associated with secretory granules.
 It contributes to regulated secretion in pancreatic beta cells and other neuroendocrine cells.
 It is also an autoantigen in type 1 diabetes; its immune relevance includes being a target of autoimmunity.
-
-29. KIF2C, Microtubule dynamics: Encodes MCAK, a kinesin-family enzyme that promotes microtubule depolymerization.
-It regulates microtubule dynamics and helps correct inappropriate chromosome-spindle attachments.
-These activities support accurate chromosome alignment and segregation during mitosis.
-
-30. UBE2C, Mitotic progression: Encodes an E2 ubiquitin-conjugating enzyme that works with the anaphase-promoting complex.
-It helps mark mitotic regulatory proteins, including cyclins, for degradation.
-Their timed removal enables orderly cell-cycle progression and exit from mitosis.
-
-31. TMED8, Putative trafficking: Encodes a poorly characterized protein annotated within the TMED/p24 trafficking family.
-This family annotation suggests a possible connection to intracellular protein transport.
-Its specific biochemical activity, cargo interactions and physiological functions remain poorly established.
 
 **32. DDIAS, Apoptosis suppression:** Encodes a protein that suppresses apoptosis following DNA damage.
 It can support cancer-cell survival and resistance to DNA-damaging treatments.
 A Kawasaki disease study also links it to inflammatory macrophage polarization through STAT3-CCL2 signaling.
 
-33. HJURP, Centromere assembly: Encodes a specialized histone chaperone for the centromeric histone variant CENP-A.
-It delivers and deposits CENP-A into chromatin at centromeres.
-This preserves centromere identity and supports accurate chromosome segregation.
-
-34. DEPDC1B, Adhesion regulation: Encodes a regulator that coordinates cell adhesion with entry into mitosis.
-It modulates RhoA-dependent signaling to facilitate the disassembly of focal adhesions.
-This allows cells to detach and change shape as they prepare to divide.
-
-35. ATAD5, Genome maintenance: Encodes an ATPase within a complex that removes the PCNA sliding clamp from DNA.
-PCNA unloading helps clear replication machinery after its task is completed.
-This reduces interference with transcription and helps protect genome stability.
-
-36. TCHP, Cilium regulation: Encodes trichoplein, a protein associated with keratin filaments and centrioles.
-It activates Aurora A kinase to suppress primary cilium formation in proliferating cells.
-It therefore connects centrosomal activity, cilium regulation and cell-cycle progression.
-
 **37. LINC01480, Stress responses:** Encodes a long noncoding RNA studied in cancer and cellular stress responses.
 Experimental studies describe context-dependent effects on proliferation and apoptosis.
 Its expression correlates with immune-cell signatures in coronary artery disease, but this does not establish causal immune regulation.
-
-38. CCNB1, Mitotic control: Encodes cyclin B1, a regulatory partner of the kinase CDK1.
-The cyclin B1-CDK1 complex drives entry into mitosis and coordinates mitotic events.
-Controlled accumulation and degradation of cyclin B1 help govern mitotic entry and exit.
-
-39. NDC1, Nuclear pore assembly: Encodes a transmembrane component of the nuclear pore complex.
-It helps assemble nuclear pores and anchor their components in the nuclear envelope.
-These pores provide regulated routes for molecular transport between the nucleus and cytoplasm.
-
-40. HSPA14, Protein folding: Encodes an HSP70-family protein associated with the cellular protein-folding machinery.
-Together with DNAJC2, it forms a ribosome-associated complex involved in handling newly synthesized proteins.
-This supports protein folding during translation and helps maintain protein homeostasis.
-
-41. YIF1B, Protein trafficking: Encodes a membrane protein involved in intracellular protein trafficking.
-It participates in transport between the endoplasmic reticulum and Golgi apparatus.
-In neurons, it also helps direct serotonin 5-HT1A receptors to dendrites.
-
-42. AC091057.3, Cancer-associated lncRNA: Produces a long noncoding RNA also reported as RP11-932O9.10.
-Its expression was included in a five-lncRNA prognostic signature for hepatocellular carcinoma.
-Its specific molecular function remains poorly characterized.
-
-43. SORD2P, Sorbitol dehydrogenase pseudogene: Is a transcribed pseudogene closely related to the protein-coding SORD gene.
-It does not encode a functional sorbitol dehydrogenase enzyme.
-Its high sequence similarity to SORD can complicate genetic variant analysis.
-
-44. AP000233.4, Uncharacterized lncRNA: Produces a long intergenic noncoding RNA on chromosome 21.
-It is also annotated as AP001341.1 and represented in LNCipedia as lnc-MRPL39-6.
-Its specific molecular function and involvement in immune regulation remain insufficiently characterized.
 
 **45. IL10RB-DT, Tumor immune suppression:** Produces a long noncoding RNA associated with suppression of antitumor immunity.
 In melanoma and breast cancer cell models, it inhibits IFN-gamma-JAK-STAT1 signaling and antigen presentation.
 This reduces CD8+ T-cell activation and supports tumor immune escape in these experimental settings.
 
-46. SLC20A1-DT, Divergent lncRNA: Produces a long noncoding RNA transcribed divergently from the SLC20A1 locus.
-It is expressed across multiple tissues and is also recorded under the clone name AC079922.3.
-Its biological function remains poorly characterized, with no established direct role in immune regulation.
 <br>
 <br>
 

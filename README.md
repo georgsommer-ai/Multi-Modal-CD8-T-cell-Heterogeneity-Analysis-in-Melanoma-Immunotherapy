@@ -65,8 +65,10 @@ I assess comparability using **UMAPs of Commonalities**(Fig.1c, 1d) based on a *
 
 <p align="left"><em>
 Fig.1: <strong>1c and 1d</strong> show that <strong>fundamental cell populations</strong> and key cluster structures remain <strong>largely preserved</strong> despite the smaller number of cells/patients.
-Fig.1: **1c and 1d** show that **fundamental cell populations** and key cluster structures remain **largely preserved** despite the smaller number of cells/patients.
 </em></p>
+
+Fig.1: **1c and 1d** show that **fundamental cell populations** and key cluster structures remain **largely preserved** despite the smaller number of cells/patients. 
+
 
 **Blood samples** were included as a negative control and to show the complete picture. They are well separated in the UMAP clusters 1, 3, 5, 9 (Fig. 1a) and the tissue analysis (chapter 4.9 ) proves that. Therefore they **do not influence the analysis.**
 
@@ -76,7 +78,7 @@ The **re-engineering** therefore **robustly reproduces the main findings** of th
 
 
 ### 2. Main Findings / Answers to the Research Questions
-<br>
+
 **a.** Determine whether **CPᴴⁱ TILs** represent an **uniform cell population** or consist of **different subpopulations**.
 <br>
 <br>
@@ -89,6 +91,7 @@ First I determine from different perspectives:
 </p>
 
 <p align="left"><em>
+  
 Fig2. shows: **CP-Hi** occupies **specific areas** of the UMAP.
 </em></p>
 <br>

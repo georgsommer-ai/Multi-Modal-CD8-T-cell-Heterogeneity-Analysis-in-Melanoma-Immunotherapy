@@ -159,35 +159,39 @@ Topic 1 also answers:
 flowchart TD
 
     A[Public Data Sources<br/>Bulk RNA-seq: GSE147620<br/>scRNA-seq / TCR-seq: GSE148190]
+    R[RDS file from original Melanoma study]
 
-    A --> B1[Bulk RNA-seq Workflow<br/>Salmon -> tximport -> Paired DESeq2]
-    B1 --> B2[CPHi / CPLo Gene-Signature Construction]
+    A --> B1[Bulk RNA-seq Workflow<br/>Salmon tximport -> Paired DESeq2]
+    B1 --> B2[CPHi / CPLo Gene-Signatures]
     B2 --> B3[GSEA]
-    B3 --> B4[Bulk-derived CPHi / CPLo Signatures]
 
     A --> C1[scRNA-seq Workflow<br/>10x Matrices -> QC -> SCTransform]
-    C1 --> C2[CD8+ T-cell Identification]
+    C1 --> C2[CD8+ T-cell Identification before]
     C2 --> C3[TCR-Gene Removal]
     C3 --> C4[CCA Integration]
-    C4 --> C5[Normalization / Downstream Expression Analysis]
+    C4 --> C5[Normalization]
+    C5 --> C6[CD8+ T-cell Identification after]
+    C6 --> C7[Tissue / Patient Source UMAP Analysis]
+    C6 --> C8[UMAP Comparison with Published Analysis]
+    R ---> C8
 
-    B4 --> D1[Gene-Signature Transfer<br/>AddModuleScore]
+    B2 --> D1[Gene-Signature Transfer<br/>ModuleScore]
     C5 --> D1
     D1 --> D2[CPHi / CPLo Classification<br/>3 complementary strategies]
     D2 --> D3[Inhibitory-Receptor Coexpression Analysis]
 
     C5 --> E1[TCR / VDJ Clonotype Analysis]
+    C5 --> F1[TITAN Topic Modeling]
+    C5 --> K1[Azimuth Reference Annotation]
+
     E1 --> E2[Clonal Expansion Analysis]
 
-    D3 --> F1[TITAN Topic Modeling]
-    E2 --> F1
-    F1 --> F2[Azimuth Reference Annotation]
-    F2 --> F3[Manual Functional Annotation]
+    F1 ~~~ E2
+    K1 ~~~ E2
 
-    F3 --> G[Reengineered Functional States of CD8+ TILs]
-    G --> H[Comparison with Published Analysis]
-
-
+    F1 --> G[Manual Functional Annotation]
+    E2 --> G
+    D3 --> G
 
 ```
 <br>

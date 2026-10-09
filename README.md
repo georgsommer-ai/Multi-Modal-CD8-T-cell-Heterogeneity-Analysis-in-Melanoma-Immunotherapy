@@ -183,6 +183,7 @@ flowchart TD
     A --> E1[TCR / VDJ Clonotype Analysis]
     C5 --> F1[TITAN Topic Modeling]
     C5 --> K1[Azimuth Reference Annotation]
+    C7 --> F1
 
     E1 --> E2[Clonal Expansion Analysis]
 

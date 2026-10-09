@@ -171,7 +171,7 @@ flowchart TD
     C3 --> C4[CCA Integration]
     C4 --> C5[Normalization]
     C5 --> C6[Final CD8+ T-cell Identification]
-    C6 --> C7[Tissue / Patient Source UMAP Analysis]
+    C6 --> C7[Tissue / Patient Source UMAP]
     C6 --> C8[UMAP Comparison with Published Analysis]
     R ---> C8
 

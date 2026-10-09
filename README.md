@@ -199,43 +199,57 @@ flowchart TD
 ```mermaid
 flowchart TD
 
-    A[Public Data Sources<br/>Bulk RNA-seq: GSE147620<br/>scRNA-seq / TCR-seq: GSE148190]
-    R[RDS file from original Melanoma study]
+block-beta
+    columns 7
 
-    A --> B1[Bulk RNA-seq Workflow<br/>Salmon tximport -> Paired DESeq2]
-    B1 --> B2[CPHi / CPLo Gene-Signatures]
-    B2 --> B3[GSEA]
+    A["Public Data Sources<br/>Bulk RNA-seq: GSE147620<br/>scRNA-seq / TCR-seq: GSE148190"] space:5 R["RDS file from original Melanoma study"]
 
-    A --> C1[scRNA-seq Workflow<br/>10x Matrices -> QC -> SCTransform]
-    C1 --> C2[CD8+ T-cell Identification before]
-    C2 --> C3[TCR-Gene Removal]
-    C3 --> C4[CCA Integration]
-    C4 --> C5[Normalization]
+    B1["Bulk RNA-seq Workflow<br/>Salmon tximport -> Paired DESeq2"] space:2 C1["scRNA-seq Workflow<br/>10x Matrices -> QC -> SCTransform"] space:3
 
-    C5 --> C6[CD8+ T-cell Identification after]
-    C6 --> C7[Tissue / Patient Source UMAP Analysis]
-    C6 --> C8[UMAP Comparison with Published Analysis]
+    B2["CPHi / CPLo Gene-Signatures"] space:2 C2["CD8+ T-cell Identification before"] space:3
+
+    B3["GSEA"] space:2 C3["TCR-Gene Removal"] space:3
+
+    space:3 C4["CCA Integration"] space:3
+
+    space:3 C5["Normalization"] space:3
+
+    space D1["Gene-Signature Transfer<br/>ModuleScore"] C6["CD8+ T-cell Identification after"] space E1["TCR / VDJ Clonotype Analysis"] F1["TITAN Topic Modeling"] K1["Azimuth Reference Annotation"]
+
+    space D2["CPHi / CPLo Classification<br/>3 complementary strategies"] C7["Tissue / Patient Source UMAP Analysis"] C8["UMAP Comparison with Published Analysis"] E2["Clonal Expansion Analysis"] space:2
+
+    space D3["Inhibitory-Receptor Coexpression Analysis"] space:3 G["Manual Functional Annotation"] space
+
+    A --> B1
+    A --> C1
+
+    B1 --> B2
+    B2 --> B3
+
+    C1 --> C2
+    C2 --> C3
+    C3 --> C4
+    C4 --> C5
+
+    C5 --> C6
+    C6 --> C7
+    C6 --> C8
     R ---> C8
 
-    B2 --> D1[Gene-Signature Transfer<br/>ModuleScore]
+    B2 --> D1
     C5 --> D1
-    D1 --> D2[CPHi / CPLo Classification<br/>3 complementary strategies]
-    D2 --> D3[Inhibitory-Receptor Coexpression Analysis]
+    D1 --> D2
+    D2 --> D3
 
-    C5 --> E1[TCR / VDJ Clonotype Analysis]
-    E1 --> E2[Clonal Expansion Analysis]
+    C5 --> E1
+    E1 --> E2
 
-    C5 --> F1[TITAN Topic Modeling]
-    F1 --> G[Manual Functional Annotation]
+    C5 --> F1
+    C5 --> K1
 
-    F1 ~~~ H[" "]
-    H ~~~ G
-    style H fill:transparent,stroke:transparent,color:transparent
-
+    F1 --> G
     E2 --> G
     D3 --> G
-
-    C5 --> K1[Azimuth Reference Annotation]
 
 ```
 <br>

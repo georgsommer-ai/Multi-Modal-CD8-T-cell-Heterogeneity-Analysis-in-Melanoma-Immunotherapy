@@ -196,50 +196,6 @@ flowchart TD
 ```
 <br>
 
-```mermaid
-flowchart TD
-
-    A[Public Data Sources<br/>Bulk RNA-seq: GSE147620<br/>scRNA-seq / TCR-seq: GSE148190]
-    R[RDS file from original Melanoma study]
-
-    A --> B1[Bulk RNA-seq Workflow<br/>Salmon tximport -> Paired DESeq2]
-    B1 --> B2[CPHi / CPLo Gene-Signatures]
-    B2 --> B3[GSEA]
-
-    A --> C1[scRNA-seq Workflow<br/>10x Matrices -> QC -> SCTransform]
-    C1 --> C2[Initial CD8+ T-cell Identification]
-    C2 --> C3[TCR-Gene Removal]
-    C3 --> C4[CCA Integration]
-    C4 --> C5[Normalization]
-    C5 --> C6[Final CD8+ T-cell Identification]
-    C6 --> C7[Tissue / Patient Source UMAP]
-    C6 --> C8[UMAP Comparison with Published Analysis]
-    R ---> C8
-
-    B2 --> D1[Gene-Signature Transfer<br/>ModuleScore]
-    C5 --> D1
-    D1 --> D2[CPHi / CPLo Classification<br/>3 complementary strategies]
-    D2 --> D3[Inhibitory-Receptor Coexpression Analysis]
-
-    A --> E1[TCR / VDJ Clonotype Analysis]
-    C5 --> F1[TITAN Topic Modeling]
-    C5 --> K1[Azimuth Reference Annotation]
-
-    E1 --> E2[Clonal Expansion Analysis]
-
-    F1 ~~~ E2
-    K1 ~~~ E2
-
-    C6 --> D3
-
-    F1 --> G[Manual Functional Annotation]
-    E2 --> G
-    D3 --> G
-    C7 --> G
-
-```
-<br>
-
 ### 4. Results 
 <br>
 
